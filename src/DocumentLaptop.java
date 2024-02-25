@@ -5,4 +5,9 @@ public class DocumentLaptop extends Laptop{
         super(name, price, spec);
         this.type = type;
     }
+
+    @Override
+    public void bootUp() {
+        System.out.println("DocumentLaptop is booting up...");
+    }
 }
