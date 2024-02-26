@@ -21,6 +21,9 @@ public class Laptop {
     }
 
     public double getPrice() {
+        if (price < 0){
+            throw new RuntimeException();
+        }
         return price;
     }
 
