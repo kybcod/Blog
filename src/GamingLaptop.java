@@ -9,4 +9,8 @@ public class GamingLaptop extends Laptop {
     public void bootUp() {
         System.out.println("GamingLaptop is booting up...");
     }
+
+    public void POWERUp() {
+        System.out.println("GamingLaptop is powering up...");
+    }
 }
