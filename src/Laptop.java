@@ -1,4 +1,4 @@
-public class Laptop {
+public class Laptop implements bootUp{
     private String name;
     private double price;
     private String spec;
@@ -9,7 +9,6 @@ public class Laptop {
         this.price = price;
         this.spec = spec;
     }
-
 
     // getter와 setter 메서드
     public String getName() {
@@ -39,10 +38,6 @@ public class Laptop {
         this.spec = spec;
     }
 
-    public void bootUp() {
-        System.out.println("Laptop is booting up...");
-    }
-
     // 가격 업데이트 메서드 오버로딩
     public void updatePrice(int newPrice) {
         this.price = newPrice;
@@ -58,6 +53,12 @@ public class Laptop {
             System.out.println("할인이 적용되지 않았습니다.");
         }
     }
+
+    @Override
+    public void bootUp() {
+        System.out.println("Laptop is booting up...");
+    }
+
 }
 
 
