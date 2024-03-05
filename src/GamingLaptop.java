@@ -1,4 +1,4 @@
-public class GamingLaptop extends Laptop {
+public class GamingLaptop extends Laptop implements Control {
     private String graphicsCard;
     public GamingLaptop(String name, int price, String spec, String graphicsCard) {
         super(name, price, spec);

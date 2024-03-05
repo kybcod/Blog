@@ -1,9 +1,17 @@
-public class Laptop implements bootUp{
+public class Laptop implements Control {
+
+    private int volume;
     private String name;
     private double price;
     private String spec;
 
+    private int memoryVolume;
+
+
     // 생성자
+    public Laptop() {
+
+    }
     public Laptop(String name, int price, String spec) {
         this.name = name;
         this.price = price;
@@ -55,11 +63,50 @@ public class Laptop implements bootUp{
     }
 
     @Override
+    public void turnOn(){
+        System.out.println("컴퓨터를 켭니다.");
+    }
+
+    @Override
+    public void turnOff(){
+        System.out.println("컴퓨터를 끕니다.");
+    }
+
+    @Override
+    public void setVolume(int volume){
+        if(volume>Control.MAX_VOLUME){
+            this.volume = Control.MAX_VOLUME;
+        } else if(volume < Control.MIN_VOLUME){
+            this.volume = Control.MIN_VOLUME;
+        } else{
+            this.volume = volume;
+        }
+        System.out.println("현재 볼륨 : " + this.volume);
+    }
+
+    @Override
+    public void setMute(boolean mute){
+        if(mute){
+            this.memoryVolume = this.volume;
+            System.out.println("무음 처리합니다.");
+            setVolume(Control.MIN_VOLUME);
+        }else {
+            System.out.println("무음 해제합니다.");
+            setVolume(this.memoryVolume);
+        }
+
+    }
+
+    @Override
     public void bootUp() {
         System.out.println("Laptop is booting up...");
     }
-
 }
+
+
+
+
+
 
 
 

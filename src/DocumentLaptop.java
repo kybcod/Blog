@@ -1,4 +1,4 @@
-public class DocumentLaptop extends Laptop implements bootUp{
+public class DocumentLaptop extends Laptop implements Control {
     String type;
 
     public DocumentLaptop(String name, int price, String spec, String type) {
