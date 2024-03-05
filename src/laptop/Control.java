@@ -1,3 +1,5 @@
+package laptop;
+
 public interface Control {
     int MAX_VOLUME = 100;
     int MIN_VOLUME = 0;
@@ -18,7 +20,6 @@ public interface Control {
     static void changeBattery(){
         System.out.println("노트북 배터리를 교환합니다.");
     }
-    public void bootUp();
 }
 
 

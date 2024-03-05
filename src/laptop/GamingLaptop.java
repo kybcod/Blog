@@ -1,8 +1,14 @@
+package laptop;
+
 public class GamingLaptop extends Laptop implements Control {
     private String graphicsCard;
     public GamingLaptop(String name, int price, String spec, String graphicsCard) {
         super(name, price, spec);
         this.graphicsCard = this.graphicsCard;
+    }
+
+    public GamingLaptop() {
+
     }
 
     @Override

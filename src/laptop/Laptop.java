@@ -1,3 +1,5 @@
+package laptop;
+
 public class Laptop implements Control {
 
     private int volume;
@@ -74,7 +76,7 @@ public class Laptop implements Control {
 
     @Override
     public void setVolume(int volume){
-        if(volume>Control.MAX_VOLUME){
+        if(volume> Control.MAX_VOLUME){
             this.volume = Control.MAX_VOLUME;
         } else if(volume < Control.MIN_VOLUME){
             this.volume = Control.MIN_VOLUME;
@@ -97,17 +99,8 @@ public class Laptop implements Control {
 
     }
 
-    @Override
     public void bootUp() {
         System.out.println("Laptop is booting up...");
     }
 }
-
-
-
-
-
-
-
-
 
