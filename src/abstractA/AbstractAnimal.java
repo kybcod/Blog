@@ -1,4 +1,4 @@
-package animal;
+package abstractA;
 
 public class AbstractAnimal {
     public static void main(String[] args) {
