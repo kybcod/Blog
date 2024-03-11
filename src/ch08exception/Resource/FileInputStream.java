@@ -1,4 +1,4 @@
-package exception.Resource;
+package ch08exception.Resource;
 
 public class FileInputStream implements AutoCloseable {
     private String file;

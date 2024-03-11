@@ -1,4 +1,4 @@
-package exception;
+package ch08exception;
 
 public class ExceptionHanding {
     public static void main(String[] args) {

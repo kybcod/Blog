@@ -1,4 +1,4 @@
-package biginteger;
+package ch09.biginteger;
 
 import java.math.BigInteger;
 

@@ -1,4 +1,4 @@
-package Inheritance;
+package ch06Inheritance;
 
 public class AnimalExample {
     public static void main(String[] args) {

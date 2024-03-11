@@ -1,4 +1,4 @@
-package exception;
+package ch08exception;
 
 public class Throws {
     public static void main(String[] args) {

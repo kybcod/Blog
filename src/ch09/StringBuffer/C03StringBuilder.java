@@ -1,4 +1,4 @@
-package StringBuffer;
+package ch09.StringBuffer;
 
 public class C03StringBuilder {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package bigdeciaml;
+package ch09.bigdeciaml;
 
 import java.math.BigDecimal;
 

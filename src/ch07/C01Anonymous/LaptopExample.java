@@ -1,4 +1,4 @@
-package anonymous;
+package ch07.C01Anonymous;
 
 
 public class LaptopExample {

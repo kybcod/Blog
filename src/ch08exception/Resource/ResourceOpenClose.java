@@ -1,4 +1,4 @@
-package exception.Resource;
+package ch08exception.Resource;
 
 import java.io.FileInputStream;
 import java.io.IOException;
