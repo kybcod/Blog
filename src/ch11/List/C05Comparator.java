@@ -14,9 +14,10 @@ public class C05Comparator {
         System.out.println("strArr = " + Arrays.toString(strArr));
 
         Arrays.sort(strArr, new Descending()); //역순
+        System.out.println("역순정렬 strArr = " + Arrays.toString(strArr));
 
-        // 정렬
-        System.out.println("strArr = " + Arrays.toString(strArr));
+        Arrays.sort(strArr, (s1,s2)->s2.compareTo(s1)); //역순
+        System.out.println("역순정렬 strArr = " + Arrays.toString(strArr));
     }
 }
 
