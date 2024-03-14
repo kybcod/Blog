@@ -1,4 +1,4 @@
-package ch11.List;
+package ch11.list;
 
 import java.util.ArrayList;
 import java.util.ListIterator;

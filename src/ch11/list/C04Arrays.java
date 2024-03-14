@@ -1,7 +1,7 @@
-package ch11.List;
+package ch11.list;
 
-import java.util.ArrayList;
-import java.util.Arrays;
+
+import java.util.*;
 
 public class C04Arrays {
     public static void main(String[] args) {
@@ -25,6 +25,11 @@ public class C04Arrays {
         Arrays.sort(arr6);
         System.out.println(Arrays.toString(arr6));
         int idx2 = Arrays.binarySearch(arr6,8); //3
+
+        List list = Arrays.asList(new Integer[]{1,2,3,4,5,6}); //(1,2,3,4,5,6)
+        System.out.println(list);
+
+
 
     }
 }

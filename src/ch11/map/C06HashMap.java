@@ -1,4 +1,4 @@
-package ch11.Hash;
+package ch11.map;
 
 import java.util.HashMap;
 import java.util.Scanner;

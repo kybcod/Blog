@@ -1,4 +1,4 @@
-package ch11.Hash;
+package ch11.map;
 
 import java.util.*;
 
@@ -30,8 +30,8 @@ public class C07HashMap {
 
         int total = 0;
         while (it.hasNext()){
-            Integer i = (Integer) it.next();
-            total += i.intValue();
+            int i = (int) it.next();
+            total += i;
         }
 
         System.out.println("총점 : " + total);

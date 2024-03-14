@@ -1,4 +1,4 @@
-package ch11.List;
+package ch11.list;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -17,10 +17,12 @@ public class C02Iterator {
 
         Iterator it = list.iterator();
 
+        int sum = 0;
         while (it.hasNext()){
-            Object obj = it.next();
-            System.out.println(obj);
+            Object obj = Integer.parseInt(it.next().toString());
+            sum +=(int) obj;
         }
+        System.out.println(sum);
 
     }
 }

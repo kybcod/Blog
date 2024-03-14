@@ -1,9 +1,6 @@
-package ch11.List;
+package ch11.list;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Iterator;
+import java.util.*;
 
 public class C01ArrayList {
     public static void main(String[] args) {
@@ -41,6 +38,19 @@ public class C01ArrayList {
                 list2.remove(i);
         }
         print(list1, list2);
+
+
+        ArrayList list3 = new ArrayList();
+        list3.add(3);
+        list3.add(2);
+        list3.add(2);
+        list3.add(2);
+        list3.add(2);
+
+        for(int i = list3.size()-1; i>=0; i--){
+            list3.remove(i);
+        }
+        System.out.println(list3);
 
 
     }
