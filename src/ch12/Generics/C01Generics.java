@@ -55,6 +55,13 @@ public class C01Generics {
         AnimalBox<? extends Animal> animalBox2 = new AnimalBox<Cat>();
         AnimalBox<Cat> animalBox3 = (AnimalBox<Cat>) animalBox2; //실행 Ok, 경고 발생
 
+
+        AnimalBox<? extends Object> objbox = null;
+        AnimalBox<? extends Animal> strbox = null;
+
+        strbox = (AnimalBox<? extends Animal>) objbox;
+        objbox = (AnimalBox<? extends Object>) strbox;
+
     }
 
 }
