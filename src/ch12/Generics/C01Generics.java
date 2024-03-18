@@ -49,11 +49,23 @@ public class C01Generics {
 
         AnimalBox.<Animal>feed3(animal);
 
-
-
         AnimalBox<? extends Animal> animalBox1 = (AnimalBox<? extends Animal>) new AnimalBox<Animal>();
         AnimalBox<? extends Animal> animalBox2 = new AnimalBox<Cat>();
         AnimalBox<Cat> animalBox3 = (AnimalBox<Cat>) animalBox2; //실행 Ok, 경고 발생
+
+
+        AnimalBox<? extends Object> objbox = null;
+        AnimalBox<? extends Animal> strbox = null;
+
+        strbox = (AnimalBox<? extends Animal>) objbox;
+        objbox = (AnimalBox<? extends Object>) strbox;
+
+        Box<? extends Object> objbox1 = null;
+        Box<? extends Animal> strbox1 = null;
+
+        strbox1 = (Box<? extends Animal>) objbox1;
+        objbox1 = (Box<? extends Object>) strbox1;
+
 
     }
 
@@ -61,7 +73,7 @@ public class C01Generics {
 
 
 
-
+/*제너릭 클래스*/
 class AnimalBox<T extends Animal> extends Box<T>{
     /* 와일드 카드 전 */
     static void feed1(AnimalBox<Animal> animal){
@@ -79,6 +91,7 @@ class AnimalBox<T extends Animal> extends Box<T>{
         }
     }
 
+    /*제너릭 메서드*/
     static <T extends Animal> void feed3(AnimalBox<T> animal){
         for(int i = 0; i<animal.size(); i++){
             Animal a = animal.get(i);
