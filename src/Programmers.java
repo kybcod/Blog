@@ -15,6 +15,7 @@ public class Programmers {
 
         }
         String result = String.join(" ", words);
+        System.out.println("result = " + result);
 
 
     }
