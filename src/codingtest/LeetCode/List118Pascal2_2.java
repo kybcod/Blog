@@ -3,7 +3,7 @@ package codingtest.LeetCode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class C118PascalTriangle2_2 {
+public class List118Pascal2_2 {
     public static void main(String[] args) {
         int numRows = 5;
 

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-public class C118PascalTriangle2 {
+public class List118Pascal2_1 {
     public static void main(String[] args) {
 //        int rowIndex = 3;
 //

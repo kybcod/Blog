@@ -2,7 +2,7 @@ package codingtest.LeetCode;
 
 import java.util.*;
 
-public class C2215Set {
+public class Set2215interaction {
     public static void main(String[] args) {
 
         int nums1[] = {1,2,3,3};
@@ -28,8 +28,10 @@ public class C2215Set {
         List<Integer> sublist2 = new ArrayList<>();
 
         for(int i: nums1){
-            if(!set1.contains(i)){
-                sublist1.add(i);
+            if(!set1.contains(i)) {
+                if (!sublist1.contains(i)) {
+                    sublist1.add(i);
+                }
             }
         }
         System.out.println(sublist1); //[3, 3]

@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class C442SetList {
+public class Set442 {
     public static void main(String[] args) {
         int[] nums = {4,3,2,7,8,2,3,1};
 
