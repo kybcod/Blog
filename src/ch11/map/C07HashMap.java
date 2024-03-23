@@ -2,7 +2,7 @@ package ch11.map;
 
 import java.util.*;
 
-import static java.lang.StringTemplate.STR;
+
 
 public class C07HashMap {
     public static void main(String[] args) {
@@ -19,7 +19,7 @@ public class C07HashMap {
 
         while (it.hasNext()){
             Map.Entry e = (Map.Entry) it.next(); //한 줄 씩 출력
-            System.out.println(STR."이름 : \{e.getKey()}, 점수 : \{e.getValue()}");
+//            System.out.println(STR."이름 : \{e.getKey()}, 점수 : \{e.getValue()}");
         }
 
         set = map.keySet();
