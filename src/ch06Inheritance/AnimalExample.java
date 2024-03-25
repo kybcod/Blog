@@ -5,7 +5,7 @@ public class AnimalExample {
         Animal animal = new Animal();
         animal.sound(); //출력 : 동물 소리
 
-        Dog dog = new Dog();
+        Dog2 dog = new Dog2();
         dog.sound(); //출력 : 멍멍
 
         Animal animal1 = new Dog(); //개는 동물이다.(new Dog() :인스턴스)
@@ -19,7 +19,7 @@ class Animal{
     }
 }
 
-class Dog extends Animal{
+class Dog extends Animal {
     @Override
     public void sound(){
         System.out.println("멍멍");
