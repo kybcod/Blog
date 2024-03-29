@@ -36,7 +36,7 @@ public class HashTable {
         for (int i = 0; i < SIZE; i++) {
             System.out.print("Bucket " + i + ": ");
             for (Integer value : table[i]) {
-                System.out.print(value + " ");
+                System.out.print(value + " "); //value 출력
             }
             System.out.println();
         }
