@@ -31,6 +31,12 @@ public class HashTable {
         table[index].remove((Integer) key); // Integer 객체로 형변환하여 요소 삭제
     }
 
+    //데이터 탐색
+    public boolean search(int key){
+        int index = hashFunction(key);
+        return table[index].contains(key);
+    }
+
     // 해시 테이블 출력
     public void printTable() {
         for (int i = 0; i < SIZE; i++) {
@@ -49,6 +55,9 @@ public class HashTable {
         ht.insert(23);
         ht.insert(15); // 충돌 발생
         ht.printTable();
+
+        System.out.println();
+        System.out.println("Search 15: " + ht.search(15));
 
         System.out.println();
 
