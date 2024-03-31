@@ -15,6 +15,7 @@ public class HashTable {
     }
 
     // 해시 함수: 키를 해시값으로 변환하여 해시 테이블의 인덱스를 반환
+    // 모듈러 연산 :
     private int hashFunction(int key) {
         return key % SIZE;
     }
