@@ -4,7 +4,7 @@ public class Programmers {
     public static void main(String[] args) {
         String s = "  try    hello   world  ";
         s=s.trim();
-        String[] words = s.split("\\s+"); //단어 분리
+        String[] words = s.trim().split("\\s+"); //단어 분리
 
         for (int i = 0; i < words.length; i++) {
             char[] ch = words[i].toCharArray(); //단어에서 문자 분리
