@@ -6,22 +6,22 @@ import java.util.List;
 
 public class List118Pascal2_1 {
     public static void main(String[] args) {
-//        int rowIndex = 3;
-//
-//        List<Integer> list = new ArrayList<>();
-//        for(int row = 0; row <= rowIndex; row++){
-//            list.add(0,1);
-//            for(int i = 1; i<row; i++){
+        int rowIndex = 3;
 
-//                list.set(i, list.get(i)+list.get(i+1));
-//            }
-//        }
-//
-//        System.out.println(list);
+        List<Integer> list = new ArrayList<>();
+        for(int row = 0; row <= rowIndex; row++){
+            list.add(0,1);
+            for(int i = 1; i<row; i++){
+
+                list.set(i, list.get(i)+list.get(i+1));
+            }
+        }
+
+        System.out.println(list);
 
 
         int numRows = 5;
-        List<List<Integer>> list = new LinkedList<>();
+        List<List<Integer>> list2 = new LinkedList<>();
 
         for (int row = 0; row < numRows; row++) {
 
@@ -32,13 +32,13 @@ public class List118Pascal2_1 {
                     sublist1.add(1);
                 }
                 else {
-                    sublist1.add(i, list.get(row-1).get(i-1)+list.get(row-1).get(i));
+                    sublist1.add(i, list2.get(row-1).get(i-1)+list2.get(row-1).get(i));
                 }
             }
-            list.add(sublist1);
+            list2.add(sublist1);
         }
 
-        System.out.println(list);
+        System.out.println(list2);
     }
 
 }
